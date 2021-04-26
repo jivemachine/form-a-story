@@ -16,8 +16,61 @@
       <hr>
         <form action="story.html" method="GET">
             <label for="animal-1">Animal:</label>
-            <input id="animal-1" type="text" name="animal-1">
+            <input id="animal-1" type="text" name="animal-1" value="hare" required>
             <br>
+            
+            <label for="animal-2">Another Animal:</label>
+            <input id="animal-2" type="text" name="animal-2" value="tortoise" required>
+            <br>
+            
+            <label for="animal-3">One More Animal:</label>
+            <input id="animal-3" type="text" name="animal-3" value="fox" required>
+            <br>
+            
+            <label for="adj-1">Adjective (past tense):</label>
+            <input id="adj-1" type="text" name="adj-1" value="slow" required>
+            <br>
+            
+            <label for="verb-1">Verb (ending in -ing):</label>
+            <input id="verb-1" type="text" name="verb-1" value="run" required>
+            <br>
+            
+            <label for="num-1">Number:</label>
+            <input for="num-1" type="number" name="num-1" required>
+            <br>
+            
+            <span>Yes or No:</span>
+            <input id="yes" type="radio" name="answer" value="yes" required>
+            <label for="yes">Yes</label>
+            <input id="no" type="radio" name="answer" value="no" required>
+            <label for="no">No</label>
+            <br>
+
+            <label for="speed">Relative speed (ends in -er):</label>
+            <select id="speed" name="speed" required>
+                <br>
+                <option value="slower">Slow as Heckin-Heck!</option>
+                <option value="kinda-slower">Slow but like fat boy running for an ice cream truck slow</option>
+                <option  value="quicker">Quick like a hare</option>
+                <option value="fastish-er">Fast, but not too fast</option>
+                <option value="Faster">Fast as HELL</option>
+            </select>
+            <br>
+
+            <label for="quote">Motivational Quote:</label>
+            <input id="quote" name="quote" type="text" list="quote-choices" required>
+            <datalist id="quote-choices">
+                <option value="winner gets ice cream"></option>
+                <option value="If you're not first you're last"></option>
+                <option value="Nice guys finish last"></option>
+                <option value="If you're not gettin that bread, you're a friggin loser, for serious"></option>
+            </datalist>
+            <br>
+
+            <label for="message">Meaningful Message:</label>
+            <textarea id="message" name="message" rows="8" cols="40" required></textarea>
+            <br>
+
             <input type="submit" value="Form My Story!">
         </form>
       
